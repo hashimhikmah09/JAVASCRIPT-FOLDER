@@ -12,7 +12,8 @@ myName = firstName + lastName
 
 
 //2) create a variable that holds the answer // of "firstName" + " " + "lastName"
-var myName = "Hikmah" + " " + "Hashim"
+// var myName = "Hikmah" + " " + "Hashim"
+var name = firstName + lastName
 
 //3) Evaluate this question. What is a + b?
 var a = 34;

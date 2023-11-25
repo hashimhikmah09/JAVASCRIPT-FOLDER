@@ -27,7 +27,7 @@ function checkDriverAge() {
 }
 
 //2. Create another function that does the same thing, called checkDriverAge2() using Function Expression.
-function checkDriverAge() {
+function checkDriverAge2() {
     var age = prompt("What is your age?");
 
     if (Number(age) < 18) {
@@ -45,18 +45,17 @@ checkDriverAge(92);
 
 // it returns "Powering On. Enjoy the ride!"
 
-function checkDriverAge() {
-    var age = prompt("What is your age?");
-
+function checkDriverAge(age) {
     if (Number(age) < 18) {
-        alert("Sorry, you are too young to drive this car. Powering off");
+        console.log("Sorry, you are too young to drive this car. Powering off");
     } else if (Number(age) > 18) {
-        alert("Powering On. Enjoy the ride!");
+        console.log("Powering On. Enjoy the ride!");
     } else if (Number(age) === 18) {
-        alert("Congratulations on your first year of driving. Enjoy the ride!");
+        console.log("Congratulations on your first year of driving. Enjoy the ride!");
     }
 }
-console.log(checkDriverAge)
+
+
 
 
 

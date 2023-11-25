@@ -40,3 +40,28 @@ var newsFeed = [
 
 
 
+var userNamePrompt = prompt("What\'s your username?");
+var passwordPrompt = prompt("what\'s your password?");
+
+function isUserValid(username, password){
+ for(var i =0; i < database.length; i++ ){
+    if (username === database[i].username && password === database[i].password){
+        return true;
+    
+    }
+ }
+
+ return false;
+}
+
+function signIn(username, password){
+    if (isUserValid(username, password)){
+        console.log(newsFeed);
+    }
+
+else {
+alert("sorry, wrong username and password");
+}
+}
+
+signIn(userNamePrompt, passwordPrompt);

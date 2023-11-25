@@ -5,7 +5,7 @@
 
 //1) Evaluate the below:
 5 + "34" //=  534
-5 - "4" //= -29
+5 - "34" //= -29
 10 % 5 //= 0
 5 % 10 //= 5
 "Java" + "Script" //JavaScript
