@@ -35,10 +35,11 @@ const person = {
 
 const firstName = person.firstName;
 const lastName = person.lastName;
-const age = person.age;
-const eyeColor = person.eyeColor;
+let age = person.age;
+let eyeColor = person.eyeColor;
 
-const { firstName, lastName, age, eyeColor} = person;
+const { firstName, lastName } = person;
+let { age, eyeColor } = person;
 
 // Object properties
 var a = 'test';

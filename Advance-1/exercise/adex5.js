@@ -67,10 +67,10 @@ const array = [
   ];
   //Create an array using forEach that has all the usernames with a "!" to each of the usernames
 //Advanced array
-  const modifiedUsernames = [];
+const modifiedUsernames = [];
 
-originalArray.forEach((user) => {
-  const modifiedUsername = user.username + "!";
+ originalArray.forEach((user) => {
+const modifiedUsername = user.username + "!";
   modifiedUsernames.push(modifiedUsername);
 });
 
@@ -79,7 +79,7 @@ console.log(modifiedUsernames);
 //Create an array using map that has all the usernames with a "? to each of the usernames
 //map
 const mapArray =originalArray.map((user)=> {
-    const modifiedUsername = user.username + "?";
+const modifiedUsername = user.username + "?";
   return modifiedUsername;
 })
 console.log(mapArray)
@@ -100,10 +100,11 @@ const reduceArray = originalArray.reduce((accumulator, user) =>
 console.log( "Total Score:", reduceArray);
 
 const totalScore = originalArray.reduce((accumulator, user) => accumulator + user.score, 0);
-
 console.log("Total Score:", totalScore);
   
-  // (1), what is the value of i?
+ 
+
+// (1), what is the value of i?
   // (2), Make this map function pure:
   const arrayNum = [1, 2, 4, 5, 8, 9];
   const newArray = arrayNum.map((num, i) => {
@@ -112,11 +113,11 @@ console.log("Total Score:", totalScore);
       return num * 2;
   })
   //solution
-  (1) i = [1,2,4,5,8,9];
-  (2) const arrayNum = [1, 2, 4, 5, 8, 9];
-    const newArray = arrayNum.map((num, i) => {
-      return num * 2;
-  });
+j = [1, 2,4,5,8,9];
+const arrayNum_solution = [1, 2, 4, 5, 8, 9];
+const newArray_solution = arrayNum_solution.map((num, j) => {
+  return num * 2;
+});
   
 
   
@@ -151,8 +152,7 @@ console.log("Total Score:", totalScore);
   
 
 const newArry = arry.map(user => {
-    const newItemList = user.items.map(item => item + "!");
-    
+const newItemList = user.items.map(item => item + "!");
     return {
         username: user.username,
         team: user.team,

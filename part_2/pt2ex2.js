@@ -11,7 +11,8 @@ array.sort();
 array.push("Kiwi");
 // 4. Remove "Apples" from the array.
 array.splice(array.indexOf("Apples"), 1);
-
+var array4 = array.splice(1, 1);
+console.log(array4)
 // 5. Sort the array in reverse order. (Not alphabetical, but reverse
 // the current Array i.e. ['a', 'c', 'b'] becomes ['b', 'c', 'a'])
 array.reverse();
